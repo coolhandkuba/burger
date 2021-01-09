@@ -14,22 +14,28 @@ router.get("/", function(request, result) {
     });
 });
 
-router.post("/api/burgers", function(request, result) {
+router.post("/", function(request, result) {
     burger.create([
         "burger_name"
     ], [
         request.body.name
     ], function() {
+        // result.json({ id: result.insertID});
         result.redirect("/");
     });
 });
 
-router.put("/api/burgers:id", function(request, result) {
+router.put("/:id", function(request, result) {
     var condition = "id = " + request.params.id;
     console.log("condition", condition);
     burger.update({
         devoured: request.body.devoured
     }, condition, function() {
+    //     if (result.changedRows == 0) {
+    //     return result.status(404).end();
+    // } else {
+    //     result.status(200).end()
+    // }
         result.redirect("/");
     });
 });
