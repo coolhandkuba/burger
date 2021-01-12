@@ -39,7 +39,7 @@
   <div class="burger_right">
   {{#each burgers}}
     {{#if this.devoured}}
-    <div class="devoured-burgers">
+    <div>
       <div class="order">
         {{this.id}}
         {{this.burger_name}}
@@ -62,13 +62,13 @@
     <div class="form-group">
       <input type="text" id="ca" name="name" placeholder="Your dream burger" required/>
     </div>
+    <br>
     <button type="submit" id="order">
-      Place Order
+      Submit
     </button>
   </form>
 
   <p>Hungry? Type in the name of any burger you want to eat, then place your order.</p>
   
-  <div class="line"></div>
 
 </div>

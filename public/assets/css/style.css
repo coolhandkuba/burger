@@ -54,12 +54,46 @@
 
 body{
     font-family: 'Poppins', 'Helveita', sans-serif;
+    background-color: #ffdb4d;
 }
 
-/* .header {
-    font-family: 'Poppins', 'Helveita', sans-serif;
-
+.burger_left {
+	width: 300px;
+	position: auto;
+	margin-bottom: 20px;
+	display: inline-block;
 }
+
+.burger_right {
+	width: 300px;
+	position: relative;
+	float: right;
+	margin-bottom: 20px;
+	display: inline-block;
+}
+
 .main {
-    font-family: 'Poppins', 'Helveita', sans-serif;
-} */
+	margin: auto;
+	width: 400px;
+}
+
+.both {
+	margin: auto;
+	width: 600px;
+}
+input {
+	display: block;
+	margin: auto;
+	width: 290px;
+	height: 35px;
+	background-color: #efefef;
+	font-size: 19px;
+	text-align: center;
+	border: solid #ffdb4d;
+}
+
+#order {
+	display: block;
+	margin: auto;
+}
+
